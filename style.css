@@ -1,0 +1,961 @@
+/*
+Theme Name: Sola - Solar Energy HTML Website Template
+Theme URI: https://templatesjungle.com/
+Author: TemplatesJungle
+Author URI: https://templatesjungle.com/
+Description: Sola is specially designed product packaged for Solar Energy by TemplatesJungle.
+Version: 1.1
+*/
+
+/*--------------------------------------------------------------
+This is main CSS file that contains custom style rules used in this template
+--------------------------------------------------------------*/
+
+/*------------------------------------*\
+    Table of contents
+\*------------------------------------*/
+
+/*------------------------------------------------
+
+CSS STRUCTURE:
+
+1. VARIABLES
+
+2. GENERAL TYPOGRAPHY
+  2.1 General Styles
+  2.2 Background Color
+  2.3 Section
+    - Section Paddings
+    - Section Margins
+    - Section Title
+    - Content width
+  2.4 Buttons
+    - Primary Buttons
+    - Outline Buttons
+
+3. CONTENT ELEMENTS
+  - Dropdown
+  - Form
+  - Svg Color
+- Swiper
+- Modal
+
+4. SITE STRUCTURE
+  4.1 Header
+  4.2 Slider Section
+  4.3 About Section
+  4.4 Services Section
+  4.5 Projects Section
+
+5. PAGES STYLE
+  5.1 About page
+  5.2 Blog page 
+  5.3 Pricing page 
+  5.4 reviews page
+  5.5 faqs page 
+
+  
+/*--------------------------------------------------------------
+/** 1. VARIABLES
+--------------------------------------------------------------*/
+:root {
+  --primary-color: #FD8C4E;
+  --bs-red: #cc1532;
+  --black-color: #1A2A36;
+  --light-black-color: #4E4C49;
+  --dark-color: #9B9B9B;
+  --primary-color-200: #E8F0F1;
+  --primary-color-400: #c4e9ed;
+  --gray-color: #777F81;
+  --bs-body-bg: #fff;
+  --bs-dark-rgb: 80, 80, 80;
+  --bs-gray-100: #EAE5DD;
+  --bs-gray-300: #DCDCDC;
+  --bs-primary-text-emphasis: var(--primary-color);
+  --bs-light-rgb: rgba(255, 255, 255, 1);
+  --bs-primary-rgb: 253, 140, 78;
+  --light-color: #fdfdfd;
+  --swiper-theme-color: #111 !important;
+  --cadet-blue-color: #9AB4B7;
+}
+
+/*PIE DE PAGINA*/
+
+.footer-gore {
+  background-color: #cc1532;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-logo {
+  max-height: 100px;
+}
+
+.redes-sociales a {
+  font-size: 1.4rem;
+  color: white;
+  transition: 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: #f5f5f5;
+}
+
+.texto-redes {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contacto-footer {
+  font-size: 0.75rem;
+  margin: 0;
+  color: white;
+}
+
+.icono-red {
+  font-size: 1.4rem;
+  color: white;
+  padding: 0 10px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.icono-red:hover {
+  color: #f5f5f5;
+}
+
+.borde {
+  border-left: 1px solid #ffffff50;
+  margin-left: 10px;
+  padding-left: 15px;
+}
+
+/*FIN DE PIE DE PAGINA*/
+
+/*LA PRUEBA DE VIDEO*/
+
+.cuadro-informativo {
+  background-color: #fff; /* gris claro */
+  border-left: 5px solid #cc1532; /* rojo institucional */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.texto-informativo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  margin: 0;
+}
+.video-evento video {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+.video-evento video {
+  pointer-events: auto;
+}
+
+.video-mini {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.video-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/*FIN DE LA PRUEBA*/
+
+/*LA PRUEBA DE CARRUSEL*/
+.titulo-juventud,
+.concepto-juventud {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-juventud {
+  font-weight: 700;
+  font-size: 3rem; /* Puedes ajustar este valor según el diseño */
+  text-transform: uppercase;
+}
+
+.concepto-juventud {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.concepto-juventud {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* más fuerte para título */
+  font-size: 2rem; /* buen tamaño para títulos */
+  color: #cc1532; /* 🔥 Este es el rojo que pediste */
+  text-transform: uppercase; /* Mayúsculas */
+  margin-bottom: 1rem;
+}
+
+.titulo-juventud {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem; /* Más controlado que display-1 */
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.parrafo-juventud {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: none;
+  line-height: 1.6;
+  max-width: 850px;
+}
+/*FIN DE LA PRUEBA*/
+
+/*LA PRUEBA DE CARRUSEL*/
+.mini-slider {
+  position: relative;
+  width: 100%;
+  height: 300px; /* ✅ Altura fija para todo el slider */
+  overflow: hidden;
+  background: #fff; /* Fondo blanco */
+  border-radius: 10px;
+}
+
+.mini-slider-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mini-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.mini-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔥 Para que la imagen siempre cubra sin deformarse */
+}
+/* Diseño especial para el slide de texto */
+.mini-slide-text {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #cc1532 0%, #eb677d 100%); /* 🔥 Fondo cubre todo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px; /* Espacio interno bonito */
+}
+
+.slide-text-content {
+  text-align: center;
+  max-width: 80%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #e7e2e2;
+}
+
+.slide-text-content h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #fffefe;
+}
+
+.slide-text-content p {
+  font-size: 14px;
+  color: #fcfafa;
+  line-height: 1.4;
+}
+
+.item {
+  min-height: 400px; /* Ajusta este valor según la altura de tu slider */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  max-height: 250px; /* Controla que no sean demasiado altas */
+  object-fit: cover;
+}
+
+.mini-prev, .mini-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 2; /* 🔥 Asegura que estén encima de las imágenes */
+}
+.mini-prev {
+  left: 10px;
+}
+
+.mini-next {
+  right: 10px;
+}
+
+.mini-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.mini-dots .dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.mini-dots .dot.active {
+  background-color: #052647;
+}
+
+.slider-texts {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*FIN DE CARRUSEL*/
+
+
+/* Fonts */
+:root {
+  --heading-font: "Syne", sans-serif;
+  --body-font: "Poppins", sans-serif;
+}
+
+/*----------------------------------------------*/
+/* 2 GENERAL TYPOGRAPHY
+/*----------------------------------------------*/
+
+/* 2.1 General Styles
+/*----------------------------------------------*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 164%;
+  letter-spacing: 0.32px;
+  color: var(--bs-body-bg);
+  margin: 0;
+}
+
+p {
+  color: var(--dark-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.text-light {
+  color: var(--light-color) !important;
+}
+
+.text-primary {
+  color: var(--bs-red) !important;
+}
+
+.text-black {
+  color: var(--black-color) !important;
+}
+
+/* 2.2 Background Color
+/*----------------------------------------------*/
+.bg-light {
+  background-color: var(--light-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-gray {
+  background-color: var(--bs-gray-100) !important;
+}
+
+.bg-accent-gradient {
+  background: linear-gradient(90deg, #18A7E4 0%, #1BADEC 0.01%, #0A9CDB 100%);
+}
+
+.bg-primary-200 {
+  background-color: var(--primary-color-200) !important;
+}
+
+.bg-primary-dim {
+  background-color: var(--bs-primary-rgb) !important;
+}
+
+/*--------------------------------------------------------------
+/** 2.3 Section
+--------------------------------------------------------------*/
+/* - Section Padding
+--------------------------------------------------------------*/
+.padding-small {
+  padding-top: 8.125em;
+  padding-bottom: 8.125em;
+}
+
+.padding-medium {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.padding-large {
+  padding-top: 12em;
+  padding-bottom: 12em;
+}
+
+/* - Section Margin
+--------------------------------------------------------------*/
+.margin-small {
+  margin-top: 8.125em;
+  margin-bottom: 8.125em;
+}
+
+.margin-medium {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+.margin-large {
+  margin-top: 12em;
+  margin-bottom: 12em;
+}
+
+
+/* - Section Title
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black-color);
+  font-family: var(--heading-font);
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.84px;
+  line-height: 115%;
+}
+
+h6 {
+  color: var(--light-black-color);
+  font-family: var(--body-font);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+/* - Content width
+--------------------------------------------------------------*/
+.container-md {
+  max-width: 1465px;
+}
+
+.container-lg {
+  max-width: 1750px;
+}
+
+/* Animation */
+@media (min-width: 200px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+/* Animate Slide */
+@keyframes slide {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slide {
+  -webkit-animation-name: slide;
+  animation-name: slide;
+}
+
+/*--------------------------------------------------------------
+/** 2.4 Buttons
+--------------------------------------------------------------*/
+.btn {
+  --bs-btn-padding-x: 2rem;
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 60px;
+  letter-spacing: 0.1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-red);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #910920;
+  --bs-btn-hover-border-color: #f37735;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #f37735;
+  --bs-btn-active-border-color: #f37735;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #f37735;
+  --bs-btn-disabled-border-color: #f37735;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--primary-color);
+  --bs-btn-hover-border-color: var(--primary-color);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--primary-color);
+  --bs-btn-active-border-color: var(--primary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--primary-color);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--primary-color);
+  --bs-gradient: none;
+}
+
+
+
+/*--------------------------------------------------------------
+/** 3.CONTENT ELEMENTS
+--------------------------------------------------------------*/
+
+/* Dropdown
+------------------------------------------------------------- */
+.dropdown-item {
+  color: var(--bs-red);
+}
+
+.dropdown-item.active,
+.dropdown-item:hover,
+.dropdown-item:active {
+  color: var(--bs-gray-100);
+  background-color: var(--bs-red);
+}
+
+/* Form
+------------------------------------------------------------- */
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.form-check-input:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--dark-color);
+  outline: 0;
+  box-shadow: none;
+}
+
+input,
+select,
+textarea {
+  border-color: var(--dark-color);
+  outline: 0;
+  box-shadow: none;
+}
+
+select:focus {
+  box-shadow: none;
+}
+
+/* Svg Color
+------------------------------------------------------------- */
+svg.light-color {
+  color: var(--light-color);
+}
+
+svg.dark-color {
+  color: var(--dark-color);
+}
+
+svg.primary-color {
+  color: var(--primary-color);
+}
+
+svg.primary-color {
+  color: var(--primary-color);
+}
+
+svg.primary-color-500 {
+  color: var(--bs-primary-rgb);
+}
+
+/* Swiper
+------------------------------------------------------------- */
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 8px;
+}
+
+.slider-pagination .swiper-pagination-bullet {
+  width: 50px;
+  height: 3px;
+  border-radius: 0;
+  background: #FFFFFF;
+}
+
+.slider-pagination .swiper-pagination-bullet-active {
+  background: var(--primary-color);
+}
+
+.testimonial-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+}
+
+.testimonial-pagination .swiper-pagination-bullet-active {
+  background: var(--primary-color);
+}
+
+
+/* modal video override
+------------------------------------------------------------- */
+.modal-dialog {
+  max-width: 800px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 0;
+  background-color: #f5f3ef;
+  border: none;
+  border-radius: 0
+}
+
+/*----------------------------------------------*/
+/* 4 SITE STRUCTURE */
+/*----------------------------------------------*/
+
+/* 4.1 Header
+/*----------------------------------------------*/
+
+a.nav-link {
+  text-transform: uppercase;
+  color: var(--bs-red);
+}
+
+a.nav-link:focus {
+  color: var(--light-black-color);
+}
+
+a.nav-link.active,
+a.nav-link:hover {
+  color: var(--bs-red) !important;
+  outline: none;
+}
+
+#primary-header .dropdown .search::after {
+  content: none;
+}
+
+#primary-header .search-dropdown .dropdown-menu {
+  width: 260px;
+}
+
+#primary-header .search-dropdown .dropdown-menu input {
+  min-width: 100%;
+}
+
+#primary-header .search-dropdown .dropdown-menu button {
+  padding: 0 12px;
+  min-height: -webkit-fill-available;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 999px) {
+  a.nav-link {
+    font-size: 30px;
+    padding: 15px 0 15px 0 !important;
+  }
+}
+
+
+/* 4.2 Slider Section
+/*----------------------------------------------*/
+section#slider .banner-content {
+  width: 40%;
+  background: rgba(253, 253, 253, 0.90);
+}
+
+section#slider .main-slider-button-next,
+.main-slider-button-prev {
+  z-index: 111111;
+  height: fit-content;
+  opacity: 0.9;
+}
+
+section#slider .main-slider-button-next.swiper-button-disabled,
+.main-slider-button-prev.swiper-button-disabled {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 999px) {
+  section#slider .banner-content {
+    width: 66%;
+  }
+}
+
+/* 4.3 About Section
+/*----------------------------------------------*/
+svg.play-icon {
+  animation: play 1.5s alternate infinite ease-in;
+}
+
+@keyframes play {
+  0% {
+    transform: scale(.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+
+}
+
+
+/* 4.4 Services Section
+/*----------------------------------------------*/
+.service-post img.service-img {
+  transition: all 0.5s ease-in-out;
+}
+
+.service-post:hover img.service-img {
+  opacity: 0.2;
+}
+
+
+/* 4.5 Projects Section
+/*----------------------------------------------*/
+
+button.filter-button {
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+button.filter-button.active,
+button.filter-button:hover {
+  color: var(--bs-body-bg);
+  background: var(--bs-red);
+}
+
+/*----------------------------------------------*/
+/* 5 PAGES STYLE */
+/*----------------------------------------------*/
+
+/*--------------------------------------------------------------
+5.1 About page 
+--------------------------------------------------------------*/
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: var(--bs-light);
+}
+
+
+/*--------------------------------------------------------------
+  5.2 Blog page 
+  --------------------------------------------------------------*/
+.pagination {
+  --bs-pagination-color: var(--black-color);
+  --bs-pagination-hover-color: #fff;
+  --bs-pagination-hover-bg: var(--primary-color);
+  --bs-pagination-hover-border-color: var(--primary-color);
+  --bs-pagination-focus-color: #fff;
+  --bs-pagination-focus-bg: var(--primary-color);
+  --bs-pagination-focus-box-shadow: none;
+  --bs-pagination-active-bg: var(--primary-color);
+  --bs-pagination-active-border-color: var(--primary-color);
+}
+
+
+/*--------------------------------------------------------------
+ 5.3 Pricing page 
+  --------------------------------------------------------------*/
+.plan-post {
+  border: 1px solid var(--primary-color);
+}
+
+span.price-tick {
+  color: var(--primary-color);
+}
+
+.price-option {
+  height: 320px;
+}
+
+
+/*--------------------------------------------------------------
+ 5.4 reviews page
+--------------------------------------------------------------*/
+
+.reviews-components {
+  box-shadow: 0px 12px 90px rgba(12, 12, 12, 0.06);
+}
+
+iconify-icon.quote {
+  font-size: 60px;
+  color: var(--primary-color);
+}
+
+.rate {
+  color: var(--primary-color);
+}
+
+
+
+/*--------------------------------------------------------------
+5.5 faqs page 
+--------------------------------------------------------------*/
+
+/* accordian style override  */
+
+.accordion {
+  --bs-accordion-border-color: var(--primary-color);
+  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-btn-icon: url('https://api.iconify.design/ion/caret-down.svg?color=%23d06051&width=30');
+  --bs-accordion-btn-active-icon: url('https://api.iconify.design/ion/caret-down.svg?color=%23d06051&width=30');
+  --bs-accordion-border-radius: 0px;
+}
+
+.accordion-header {
+  margin-bottom: 0;
+  border-top: 1px solid var(--primary-color);
+}
+
+.accordion-button {
+  font-family: var(--heading-font);
+  font-weight: var(--heading-font-weight);
+  color: var(--heading-color);
+  line-height: var(--heading-line-height);
+  letter-spacing: 0.065rem;
+  text-transform: uppercase;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--heading-color);
+  background-color: transparent;
+  box-shadow: none;
+}
